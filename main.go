@@ -1,14 +1,20 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+	"math"
 )
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Enter Height: ")
-	text, _ := reader.ReadString('\n')
-	fmt.Print(text)
+
+	for {
+		var height float64
+		var volume float64
+		fmt.Print("Enter Height: ")
+		fmt.Scanf("%f", &height)
+
+		volume = math.Pow(height, 3) * math.Pi / 6
+
+		fmt.Print("The voume of the napkin ring is: ", volume, "\n")
+	}
 }
