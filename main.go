@@ -11,7 +11,7 @@ func main() {
 		var height float64
 		var volume float64
 		fmt.Print("Enter Height: ")
-		fmt.Scanf("%f", &height)
+		_, _ = fmt.Scanf("%f", &height)
 
 		volume = math.Pow(height, 3) * math.Pi / 6
 
