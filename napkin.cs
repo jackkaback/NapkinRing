@@ -6,8 +6,6 @@ namespace napkin
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello world");
-
 			double height = 0.0;
 			double volume = 0.0;
 
